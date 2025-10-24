@@ -48,7 +48,8 @@ public class NameRepository {
      */
     public static String[] findAll() {
         //todo: PART 1: implement findAll method
-        return null;
+        //return null;
+        return Arrays.copyOf(names, names.length);
     }
 
 
