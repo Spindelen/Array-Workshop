@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import java.util.Arrays;
+
 /**
  * The NameRepository class provides methods to manage a list of names.
  * It offers functionalities such as adding, removing, finding, and updating names.
@@ -89,6 +91,7 @@ public class NameRepository {
             return true;
         }
         return false;
+
     }
 
 
@@ -175,6 +178,4 @@ public class NameRepository {
         setNames(fullNameRemove);
         return removed;
     }
-
-
 }
