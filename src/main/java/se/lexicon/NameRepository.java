@@ -120,7 +120,16 @@ public class NameRepository {
      */
     public static String[] findByLastName(final String lastName) {
         //todo: PART 3: implement findByLastName method
-        return null;
+        String[] lastNameFind = new String[0];
+        for (String name : names) {
+            if (name.contains(lastName)) {
+                lastNameFind = Arrays.copyOf(lastNameFind, lastNameFind.length + 1);
+                lastNameFind[lastNameFind.length - 1] = name;
+            }
+        }
+        return lastNameFind;
+
+
     }
 
 
