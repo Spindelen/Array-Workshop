@@ -81,6 +81,13 @@ public class NameRepository {
      */
     public static boolean add(final String fullName) {
         //todo: PART 2: implement add method
+        Arrays.sort( names, String.CASE_INSENSITIVE_ORDER);
+        if ( find (fullName) == null){
+            names = Arrays.copyOf(names, names.length + 1);
+            names[ names.length - 1] = fullName;
+
+            return true;
+        }
         return false;
     }
 
