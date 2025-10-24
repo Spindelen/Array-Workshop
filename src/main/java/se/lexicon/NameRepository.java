@@ -28,6 +28,7 @@ public class NameRepository {
      */
     public static void setNames(final String[] names) {
         //todo: PART 1: implement setNames method
+        NameRepository.names = Arrays.copyOf(names, names.length);
     }
 
 
