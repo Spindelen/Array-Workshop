@@ -37,6 +37,7 @@ public class NameRepository {
      */
     public static void clear() {
         //todo: PART 1: implement clear method
+        names = new String[0];
     }
 
 
