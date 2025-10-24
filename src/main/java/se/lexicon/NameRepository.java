@@ -100,7 +100,15 @@ public class NameRepository {
      */
     public static String[] findByFirstName(final String firstName) {
         //todo: PART 3: findByFirstName method
-        return null;
+        String[] firstNameFind = new String[0];
+        for (String name : names) {
+
+        if (name.contains(firstName)) {
+            firstNameFind = Arrays.copyOf(firstNameFind, firstNameFind.length + 1);
+            firstNameFind[firstNameFind.length - 1] = name;
+        }
+    }
+        return firstNameFind;
     }
 
 
