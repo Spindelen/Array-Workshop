@@ -142,6 +142,13 @@ public class NameRepository {
      */
     public static boolean update(final String original, final String updatedName) {
         //todo: PART 3: implement update method
+            for( int i = 0; i < names.length; i++){
+
+                if (names[i].equalsIgnoreCase(original)){
+                    names[i] = updatedName;
+                    return true;
+                }
+            }
         return false;
     }
 
