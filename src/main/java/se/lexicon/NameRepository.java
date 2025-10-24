@@ -16,7 +16,8 @@ public class NameRepository {
      */
     public static int getSize() {
         //todo: PART 1: implement getSize method
-        return 0;
+
+        return names.length;
     }
 
 
