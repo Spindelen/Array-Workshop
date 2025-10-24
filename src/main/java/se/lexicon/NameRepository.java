@@ -61,7 +61,15 @@ public class NameRepository {
      */
     public static String find(final String fullName) {
         //todo: PART 2: implement find method
-        return null;
+        //return null;
+
+            for(String name : names) {
+                if(name.equalsIgnoreCase(fullName)) {
+                    return name;
+                }
+            }
+            return null;
+
     }
 
 
